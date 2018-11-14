@@ -1,8 +1,3 @@
-/** HTML5 Gallery - jQuery Image and Video Gallery Plugin
- * Copyright 2014 Magic Hills Pty Ltd All Rights Reserved
- * Website: http://html5box.com
- * Version 9.0 
- */
 (function(){for(var u=document.getElementsByTagName("script"),s="",m=0;m<u.length;m++)u[m].src&&u[m].src.match(/html5gallery\.js/i)&&(s=u[m].src.substr(0,u[m].src.lastIndexOf("/")+1));u=!1;if("undefined"==typeof jQuery)u=!0;else if(m=jQuery.fn.jquery.split("."),1>m[0]||1==m[0]&&6>m[1])u=!0;if(u){var u=document.getElementsByTagName("head")[0],t=document.createElement("script");t.setAttribute("type","text/javascript");t.readyState?t.onreadystatechange=function(){if("loaded"==t.readyState||"complete"==
 t.readyState)t.onreadystatechange=null,loadHtml5Gallery(s)}:t.onload=function(){loadHtml5Gallery(s)};t.setAttribute("src",s+"jquery.js");u.appendChild(t)}else loadHtml5Gallery(s)})();
 function loadHtml5Gallery(u){jQuery.easing.jswing=jQuery.easing.swing;jQuery.extend(jQuery.easing,{def:"easeOutQuad",easeInQuad:function(b,e,a,c,d){return c*(e/=d)*e+a},easeOutQuad:function(b,e,a,c,d){return-c*(e/=d)*(e-2)+a},easeInOutQuad:function(b,e,a,c,d){return 1>(e/=d/2)?c/2*e*e+a:-c/2*(--e*(e-2)-1)+a},easeInCubic:function(b,e,a,c,d){return c*(e/=d)*e*e+a},easeOutCubic:function(b,e,a,c,d){return c*((e=e/d-1)*e*e+1)+a},easeInOutCubic:function(b,e,a,c,d){return 1>(e/=d/2)?c/2*e*e*e+a:c/2*((e-=
